@@ -26,4 +26,6 @@ RUN add-apt-repository -y \
 RUN apt-get update \
     && apt-get install -y \
     gawk \
+    python \
+    rsync \
     && rm -rf /var/lib/apt/lists/*
