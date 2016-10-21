@@ -28,4 +28,5 @@ RUN apt-get update \
     gawk \
     python \
     rsync \
+    rlwrap \
     && rm -rf /var/lib/apt/lists/*
