@@ -22,6 +22,8 @@ RUN add-apt-repository -y \
     && update-java-alternatives -s java-6-oracle \
     && rm -rf /var/lib/apt/lists/*
 
+ENV JAVA_HOME /usr/lib/jvm/java-6-oracle
+
 # Install other tools
 RUN apt-get update \
     && apt-get install -y \
