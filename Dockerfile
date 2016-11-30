@@ -2,6 +2,9 @@
 FROM wnameless/oracle-xe-11g
 MAINTAINER Jose M. Fernandez-Alba <jm.fernandezalba@commonms.com>
 
+# Prepare user
+RUN echo -e "hubpass\nhubpass\n" | passwd root
+
 # Update repositories and common utils
 RUN apt-get update \
     && apt-get install -y \
