@@ -36,6 +36,7 @@ RUN apt-get update \
     rlwrap \
     nano \
     dos2unix \
+    git \
     && rm -rf /var/lib/apt/lists/*
 
 # Configuration for jsch
