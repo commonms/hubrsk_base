@@ -30,6 +30,8 @@ ENV JAVA_HOME /usr/lib/jvm/java-6-oracle
 # Install other tools
 RUN apt-get update \
     && apt-get install -y \
+    iputils-ping \
+    traceroute \
     gawk \
     python \
     rsync \
